@@ -5,7 +5,7 @@ pipeline{
             label 'x86-64'
             customWorkspace '/home/jenkins'
         }
-
+ }
 tools{
 maven 'Maven-3.6.2'
 
