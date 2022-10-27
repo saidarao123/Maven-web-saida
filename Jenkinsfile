@@ -2,7 +2,7 @@ pipeline{
 
   agent {
 	  node { label 'x86-64' }
-
+  }
 tools{
 maven 'maven3.8.2'
 
