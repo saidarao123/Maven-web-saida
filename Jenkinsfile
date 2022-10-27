@@ -4,7 +4,7 @@ pipeline{
 	  node { label 'x86-64' }
   }
 tools{
-maven 'Maven-3.8.2'
+maven 'Maven-3.6.2'
 
 }
 
