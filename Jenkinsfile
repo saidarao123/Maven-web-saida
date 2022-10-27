@@ -1,6 +1,7 @@
 pipeline{
 
-agent any
+  agent {
+	  node { label 'x86064' }
 
 tools{
 maven 'maven3.8.2'
