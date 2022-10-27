@@ -5,7 +5,7 @@ pipeline{
   }
 tools{
 maven 'Maven-3.6.2'
-java 'Java-9.0.4'
+jdk 'Java-9.0.4'
 
 }
 
