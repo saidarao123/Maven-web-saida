@@ -21,7 +21,7 @@ stages{
 
   stage('CheckOutCode'){
     steps{
-    git branch: 'master', url: 'https://github.com/saidarao123/Maven-web-saida.git'
+    git branch: 'master', url: 'https://github.com/saidarao123/spring-boot.git'
 	
 	}
   }
