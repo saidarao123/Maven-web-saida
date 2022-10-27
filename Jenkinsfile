@@ -21,7 +21,7 @@ stages{
 
   stage('CheckOutCode'){
     steps{
-    git master: 'development', url: 'https://github.com/saidarao123/Maven-web-saida.git'
+    git branch: 'master', url: 'https://github.com/saidarao123/Maven-web-saida.git'
 	
 	}
   }
