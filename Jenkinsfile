@@ -5,9 +5,7 @@ pipeline{
             label 'x86-64'
             customWorkspace '/home/jenkins'
         }
-  //agent {
-	  node { label 'x86-64' }
-  }
+
 tools{
 maven 'Maven-3.6.2'
 
