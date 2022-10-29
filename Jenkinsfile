@@ -38,26 +38,8 @@ stages{
  stage('ExecuteSonarQubeReport'){
   steps{
   sh  "mvn clean sonar:sonar"
-  }
-  }
-  stage('Quality Analysis') {
-            environment {
-                SONAR = credentials('Admin@123') //use ‘sonar’ credentials
-            }
-            parallel {     // run Sonar Scan and Integration tests in parallel
-                stage ("Integration Test"} {
-                    steps {
-                        echo 'Run integration tests here...'
-                    }
-                }
-                stage("Sonar Scan") {
-                    steps {
-                        sh "mvn sonar:sonar -Dsonar.login=$SONAR_PSW"
-                    }
-                }
-            }
-        }
-  
+   }
+ }
   stage('UploadArtifactsIntoNexus'){
   steps{
   sh  "mvn clean deploy"
