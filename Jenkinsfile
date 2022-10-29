@@ -30,6 +30,8 @@ stages{
   stage('Build'){
   steps{
   sh  "mvn clean package"
+  junit(allowEmptyResults: true, testResults: '**/target/surefire-reports/TEST-*.xml')
+
   }
   }
 /*
