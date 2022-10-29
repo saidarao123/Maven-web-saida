@@ -29,12 +29,12 @@ stages{
   
   stage('Build'){
   steps{
-  sh  "mvn clean sonar:sonar"
+  sh  "mvn clean package"
   junit(allowEmptyResults: true, testResults: '**/target/surefire-reports/TEST-*.xml')
 
   }
   }
-/*
+
  stage('ExecuteSonarQubeReport'){
   steps{
   sh  "mvn clean sonar:sonar"
@@ -71,8 +71,8 @@ stages{
   }
   }
   }
-  */
-}//Stages Closing
+  
+}
 
 post{
 
