@@ -22,7 +22,7 @@ stages{
 
   stage('CheckOutCode'){
     steps{
-    git branch: 'master', url: 'https://github.com/saidarao123/spring-boot.git'
+    git branch: '$branch', url: 'https://github.com/saidarao123/spring-boot.git'
 	
 	}
   }
